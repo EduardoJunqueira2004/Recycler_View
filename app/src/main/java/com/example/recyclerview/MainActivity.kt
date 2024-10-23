@@ -25,8 +25,7 @@ class MainActivity : AppCompatActivity() {
             myList.add(Place("Country $i", i*500, "Capital $i"))
         }
         val recycler_view: RecyclerView = findViewById(R.id.recycler_view)
-        recycler_view.adapter = LineAdap
-        ter(myList)
+        recycler_view.adapter = LineAdapter(myList)
         recycler_view.layoutManager = LinearLayoutManager(this)
     }
 
